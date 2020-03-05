@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  public opened = true;
+  public opened = false;
 
   constructor() { }
 
