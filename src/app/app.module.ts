@@ -19,6 +19,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContainerAppComponent } from './components/pages/container-app/container-app.component';
 import { ModalComponent } from './shared/components/modal/modal.component';
+import { EditPostComponent } from './components/posts/edit-post/edit-post.component';
+import { EditPostModule } from './components/posts/edit-post/edit-post.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     PostComponent,
     ToolbarComponent,
     ContainerAppComponent,
-    ModalComponent
+    ModalComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    EditPostModule,
   ],
   entryComponents: [
     ModalComponent
